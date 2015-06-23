@@ -12,7 +12,7 @@ import (
 	"io"
 	"strings"
 
-	. "github.com/mxk/go-sqlite/sqlite3"
+	. "github.com/rwcarlsen/go-sqlite/sqlite3"
 )
 
 func init() {

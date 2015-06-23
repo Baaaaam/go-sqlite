@@ -10,7 +10,7 @@ import (
 	"os"
 	"strconv"
 
-	. "github.com/mxk/go-sqlite/sqlite3"
+	. "github.com/rwcarlsen/go-sqlite/sqlite3"
 )
 
 type hexDump struct {

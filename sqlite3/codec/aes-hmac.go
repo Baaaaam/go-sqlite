@@ -12,7 +12,7 @@ import (
 	"crypto/sha256"
 	"hash"
 
-	. "github.com/mxk/go-sqlite/sqlite3"
+	. "github.com/rwcarlsen/go-sqlite/sqlite3"
 )
 
 type aesHmac struct {
