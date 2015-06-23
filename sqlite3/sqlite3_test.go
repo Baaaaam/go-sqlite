@@ -699,7 +699,7 @@ func TestTail(T *testing.T) {
 		// s.Tail must be a suffix of sql or ""
 		if s.Tail != tail {
 			t.Errorf(cl("s.Tail expected %q; got %q"), tail, s.Tail)
-		} else if tail == "" && sHdr(s.Tail).Data == sHdr(tail).Data {
+		} else if tail == "" && sHdr(s.Tail).Data != 0 && sHdr(s.Tail).Data == sHdr(tail).Data {
 			t.Errorf(cl("s.Tail is a pointer into sql"))
 		} else if tail != "" && sHdr(s.Tail).Data != sHdr(tail).Data {
 			t.Errorf(cl("s.Tail isn't a pointer into sql"))
